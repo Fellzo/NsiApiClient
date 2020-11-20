@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fellzo\NsiApiClient\Exceptions;
+namespace Fellzo\NsiApiClient\Methods\Exceptions;
 
 
 class MissingRequiredParameterException extends \Exception

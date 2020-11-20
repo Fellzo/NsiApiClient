@@ -4,6 +4,11 @@
 namespace Fellzo\NsiApiClient\ResponseModels;
 
 
+/**
+ * Class RefbookField
+ * @package Fellzo\NsiApiClient\ResponseModels
+ * @url https://nsi.rosminzdrav.ru/port/#/definitions/Структура столбца справочника
+ */
 class RefbookField
 {
     use Fillable;

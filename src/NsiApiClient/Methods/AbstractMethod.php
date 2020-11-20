@@ -2,12 +2,11 @@
 
 namespace Fellzo\NsiApiClient\Methods;
 
-use Co\Http2\Client;
 use Fellzo\NsiApiClient\Exceptions\ResponseModelException;
+use Fellzo\NsiApiClient\Methods\Exceptions\MissingRequiredParameterException;
 use Fellzo\NsiApiClient\ResponseModels\ResponseModel;
 use GuzzleHttp;
 
-use Fellzo\NsiApiClient\Exceptions\MissingRequiredParameterException;
 use Fellzo\NsiApiClient\Methods\Exceptions\MethodException;
 
 
@@ -45,6 +44,9 @@ abstract class AbstractMethod implements MethodInterface
      * @var string Field name for passing token
      */
     protected string $tokenFieldName = 'userKey';
+    /**
+     * @var string Response model class (will be filled by response data)
+     */
     protected string $responseModel  = '';
 
     /**
@@ -131,8 +133,8 @@ abstract class AbstractMethod implements MethodInterface
      * @param callable $callback Will be called after successful request (response will be passed as parameter)
      * @return ResponseModel
      * @throws MethodException
-     * @throws MissingRequiredParameterException
      * @throws ResponseModelException
+     * @throws Exceptions\MissingRequiredParameterException
      */
     public function __invoke(GuzzleHttp\Client $client, array $params, callable $callback = null)
     {

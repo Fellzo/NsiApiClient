@@ -54,7 +54,7 @@ class Client
     }
 
     /**
-     * Загружает зарегистрированные API методы
+     * Load all registered in $registered array methods
      * @return $this
      */
     private function loadMethods()

@@ -18,6 +18,7 @@
             "Fellzo\\NsiApiClient\\": "src/NsiApiClient"
         }
     },
+    "version": "0.1",
     "require-dev": {
         "symfony/polyfill-mbstring": "^1.20",
         "vlucas/phpdotenv": "^5.2"
