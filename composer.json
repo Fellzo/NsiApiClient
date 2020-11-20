@@ -1,5 +1,6 @@
 {
     "name": "fellzo/nsi-api-client",
+    "description": "Client for working with NSI API (https://nsi.rosminzdrav.ru/port)",
     "authors": [
         {
             "name": "fellzo",
